@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'SuperCooleWTApp'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8F9B879CE90D497F971927685F24F947 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7A0BBE0B6AC145AF89F58569352A1CD3 }}
