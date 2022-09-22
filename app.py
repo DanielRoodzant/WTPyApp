@@ -1,6 +1,7 @@
 from flask import Flask
 import numpy
 import requests
+import pandas as pd
 #import daniel
 
 # Hello World 
@@ -19,4 +20,12 @@ def cats():
     data = cat.json()
     fact = data["data"][numpy.random.choice(10)]
     return fact["fact"]
+
+#CSV
+@app.route("/csv")
+def pokemon():
+    df=pd.read_csv("Pokemon.csv")
+    namen = df.sample()
+    return (namen.to_string())
+    
     
