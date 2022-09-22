@@ -12,8 +12,6 @@ def hello_world():
     return "<p>Hello, World!</p>"
 
 # API
-app = Flask(__name__)
-
 @app.route("/api")
 def cats():
     cat =requests.get("https://catfact.ninja/facts")
