@@ -1,6 +1,4 @@
 flask
 pandas
 numpy
-mysql.connector
 requests
-beautifulsoup4
